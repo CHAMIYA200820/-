@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CHAMINDU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>CHAMINDU</h1>
+    <p>Cyberpunk Tech Zone</p>
+
+    <div class="btn-container">
+      <input type="text" id="songQuery" placeholder="Search Song" class="btn">
+      <button onclick="searchSong()" class="btn">Search Song</button>
+      <button onclick="stopMusic()" class="btn">Stop Music</button>
+      <button onclick="openChat()" class="btn">Chat with AI</button>
+    </div>
+
+    <div id="player-container">
+      <iframe id="youtube-player" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <div id="chatContainer" class="chat-container" style="display:none;">
+      <div class="chat-box" id="chatBox"></div>
+      <input type="text" class="chat-input" id="chatInput" placeholder="Ask me something...">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
